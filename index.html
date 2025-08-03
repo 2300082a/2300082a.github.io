@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GWBL</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to my digital portfolio</h1>
+        <p>Irvin Ng</p>
+        <p>Internship company: ASTAR</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">Introduction</a></li>
+            <li><a href="#evidence">Evidence of Work</a></li>
+            <li><a href="#reflection">Reflection</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>Introduction</h2>
+        <p>Hi I'm Irvin Ng. I'm currently a TP student interning at ASTAR.</p>
+        <h2>About ASTAR</h2>
+        <p>ASTAR is a research agency that is publicly funded by the Singapore Government.
+        ASTAR does research across many different fields from Biomedical Science to Physical Science and 
+        Engineering. I'm interning under the Cybersecurity department of I2R. I2R is the research institute
+        under ASTAR that focuses on Infocomm and Communications Technology
+        </p>
+        <h2>Projects I'm assigned to</h2>
+        <p>
+         I'm currently assigned to 2 projects. The first project is as a QA for a
+         currently internal ASTAR project and the other is a more public project
+         which is working on the CakeML compiler. This digital portfolio would focus
+         more on the public work that's done.
+        </p>
+    </section>
+    <section id="evidence">
+        <h2>Work 1</h2>
+        <p>For the public work on the CakeML compiler you can see my github history at
+          https://github.com/CakeML/cakeml/commits?author=ordinarymath. Most of this work
+          was done on the was working on a branch that recently got merged in this PR
+          https://github.com/CakeML/cakeml/pull/1199. CakeML depends on 
+          the HOL-Theorem-Prover and I have also done some work there
+          https://github.com/HOL-Theorem-Prover/HOL/commits?author=ordinarymath
+          I have also done some internal work which is not publicly viewable.
+       </p>
+       <h2>Work 2</h2>
+       <p> For the other non public work it involved writing tests using PyTest. 
+        https://docs.pytest.org/en/stable/. Pytest is a python framework for writing test.
+        I had to learn about stuff like fixtures which allows one to create reusable setups
+        for test. 
+       </p>
+    </section>
+
+    <section id="reflection">
+        <h2>What have I learnt task 1</h2>
+        <p>
+          As CakeML is formally verified using the HOL4 theorem prover https://hol-theorem-prover.org/
+          and I had to learn how to use it. I had already learnt before my internship started.
+          This involved asking people who knew how to use HOL4 some working at ASTAR, some
+          overseas. There were also some online resources which were useful when I was learning
+          which are the https://hol-theorem-prover.org/cheatsheet.html and the description manual 
+          http://sourceforge.net/projects/hol/files/hol/trindemossen-1/trindemossen-1-description.pdf/download
+        </p>
+        <h2>How the CakeML compiler is verified and what does it mean to be verified(technical)</h2>
+        <p>
+        CakeML is a verified compiler. A compiler is a program that turns code written in a programming language
+        to assembly code that runs on a computer. This translation is important to be correct as without that
+        bugs may occur. Software verification is the process of proving using mathematics that a software
+        specifies some specification. For a compiler the specification that people want to prove is semantics
+        preservation. This means that the program behaves the same. Intuitively one may think of it
+        similar to how 2 * 3 is the same as 2 + 2 + 2 as they both equal the same output, 6. 
+         </p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: 2300082a@student.tp.edu.sg</p>
+        <p>Github: ordinarymath</p>
+    </section>
+</body>
+</html>
