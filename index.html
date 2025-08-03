@@ -4,9 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GWBL</title>
+    <style>
+    /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #feeeed;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation Styles */
+nav {
+    margin: 20px 0;
+   font-size: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+section h2 {
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    nav {
+        display: block;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+    </style>
 </head>
 <body>
     <header>
+        <h1>This site is for a school requirement and will be down on 1 SEP 2025
+            until required again</h1>
         <h1>Welcome to my digital portfolio</h1>
         <p>Irvin Ng</p>
         <p>Internship company: ASTAR</p>
@@ -22,60 +101,89 @@
     </nav>
     <section id="about">
         <h2>Introduction</h2>
-        <p>Hi I'm Irvin Ng. I'm currently a TP student interning at ASTAR.</p>
+        <p>Hi I'm Irvin Ng. I'm currently a TP student interning at the
+           CyberSecurity department at I2R ASTAR.</p>
         <h2>About ASTAR</h2>
         <p>ASTAR is a research agency that is publicly funded by the Singapore Government.
-        ASTAR does research across many different fields from Biomedical Science to Physical Science and 
-        Engineering. I'm interning under the Cybersecurity department of I2R. I2R is the research institute
+        I2R (Institute for Infocomm Research) is the research institute
         under ASTAR that focuses on Infocomm and Communications Technology
+        and I'm interning in the CyberSecurity department.
         </p>
         <h2>Projects I'm assigned to</h2>
         <p>
-         I'm currently assigned to 2 projects. The first project is as a QA for a
-         currently internal ASTAR project and the other is a more public project
-         which is working on the CakeML compiler. This digital portfolio would focus
+         I'm currently assigned to 2 projects. The first project is as a QA (Quality Assurance)
+         testing for a currently internal ASTAR project. The other work is a more research based
+         and public work on the CakeML compiler. This digital portfolio would focus
          more on the public work that's done.
         </p>
     </section>
+    <a> <hr> </a>
     <section id="evidence">
-        <h2>Work 1</h2>
-        <p>For the public work on the CakeML compiler you can see my github history at
-          https://github.com/CakeML/cakeml/commits?author=ordinarymath. Most of this work
-          was done on the was working on a branch that recently got merged in this PR
-          https://github.com/CakeML/cakeml/pull/1199. CakeML depends on 
-          the HOL-Theorem-Prover and I have also done some work there
-          https://github.com/HOL-Theorem-Prover/HOL/commits?author=ordinarymath
-          I have also done some internal work which is not publicly viewable.
+        <h2>Proof of Work</h2>
+        <h2>CakeML compiler Task</h2>
+        <p>For the public work on the CakeML compiler it can be divided into 2 categories
+          some of them are chore work like refactoring code and proofs. Others are implementing
+          and verifying new compiler passes.
+          For complete evidence of my work you can see my github commit history on the CakeML repository. 
+          https://github.com/CakeML/cakeml/commits?author=ordinarymath. The chore isn't organized cleanly but the new work i.e. adding improving the compiler was done on a branch that got merged in this PR https://github.com/CakeML/cakeml/pull/1199. This was a work on a developmental
+          branch that got merged. To work on this branch I required being able to use
+          the HOL4 Theorem Prover and also know about compiler development.
        </p>
-       <h2>Work 2</h2>
-       <p> For the other non public work it involved writing tests using PyTest. 
-        https://docs.pytest.org/en/stable/. Pytest is a python framework for writing test.
-        I had to learn about stuff like fixtures which allows one to create reusable setups
-        for test. 
+       <h2>Internal ASTAR project</h2>
+       <p> For the other non public work it was writing tests for QA. This required learning
+        the workflow/requirements that the internal ASTAR project intended to provide to figure
+        out happy and unhappy cases to write tests. This was done by reading internal documents provided by my supervisor. Another thing I needed to learn was PyTest.
+        https://docs.pytest.org/en/stable/ PyTest is a python software testing framework. 
+        I managed to discover bugs from writing and running tests that were sent to the
+        developers and got subsequently fixed.
        </p>
     </section>
+    <a> <hr> </a>
 
     <section id="reflection">
-        <h2>What have I learnt task 1</h2>
+        <h2>Reflections</h2>
+        <h2>What have I learnt while working on the CakeML compiler</h2>
         <p>
           As CakeML is formally verified using the HOL4 theorem prover https://hol-theorem-prover.org/
-          and I had to learn how to use it. I had already learnt before my internship started.
+          and I had to learn how to use it. 
+          
+          I had already learnt before my internship started.
           This involved asking people who knew how to use HOL4 some working at ASTAR, some
           overseas. There were also some online resources which were useful when I was learning
           which are the https://hol-theorem-prover.org/cheatsheet.html and the description manual 
-          http://sourceforge.net/projects/hol/files/hol/trindemossen-1/trindemossen-1-description.pdf/download
+          http://sourceforge.net/projects/hol/files/hol/trindemossen-1/trindemossen-1-description.pdf/download 
+          Below I will write about compiler verification which is the main thing I learned working on the CakeML.
         </p>
         <h2>How the CakeML compiler is verified and what does it mean to be verified(technical)</h2>
         <p>
-        CakeML is a verified compiler. A compiler is a program that turns code written in a programming language
-        to assembly code that runs on a computer. This translation is important to be correct as without that
-        bugs may occur. Software verification is the process of proving using mathematics that a software
-        specifies some specification. For a compiler the specification that people want to prove is semantics
-        preservation. This means that the program behaves the same. Intuitively one may think of it
-        similar to how 2 * 3 is the same as 2 + 2 + 2 as they both equal the same output, 6. 
-         </p>
-    </section>
+        The CakeML compiler is a type of software known as a compiler. Compilers play a crucial role in programming by converting code written in a programing languages into machine code that computers can understand and execute. This software is essential to be correct/bug free because if the translation is incorrect, it can lead to bugs and unexpected behavior in the software written by programmers even if their code is correctly.
 
+To ensure that the CakeML compiler works correctly, it uses a technique called software verification. This process uses mathematical methods to prove that the software meets a specification. For compilers, the specification for it's correctness is called semantics preservation. This means that the program should behave the same way after it has been compiled as to some specification of the programming language.
+
+Lets me use the language of addition and multiplication over natural numbers as an example.
+2 * 3 is the semantically the same as 2 + 2 + 2 while being different syntactically aka different text. In the same way, the CakeML compiler ensures that more complex programs maintain their intended behavior after being translated into machine code.
+         </p>
+        <h2>What have I learnt while working on the internal ASTAR stuff</h2>
+        <p>
+        As mentioned before I had to learn PyTest. This section is more on the small
+        stuff I had to learn. 
+        I had to learn about fixtures and how they could be used to create reusable setups
+        for tests
+        </p>
+        <h2>Challenges faced</h2>
+        <p>
+        There was a couple of challenges faced by this project. The first was the difficulty of onboarding onto to the internal project due to internal company network protections but was mainly an issue for my supervisor and was dealt by him. There were some other issues where I was sometimes not proactive enough informing problems and getting stuck on a problem and trying to do it myself when I should have instead informed him earlier for help.  
+        </p>
+        <h2>Beyond the internship</h2>
+        <p>
+        I believe that this stuff that I learn will help me beyond this internship
+        as with knowledge of formal verification and interactive theorem proving
+        I can participate in other formal verification projects or even verify start
+        my own project.
+        </p>
+       
+    </section>
+    <a> <hr> </a>
     <section id="contact">
         <h2>Contact</h2>
         <p>Email: 2300082a@student.tp.edu.sg</p>
